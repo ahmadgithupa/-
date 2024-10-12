@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login user</title>
+    <link rel="stylesheet" href="src/componants.css" />
+    <style>
+      .container {
+        overflow: hidden;
+      }
+      .info {
+        flex: 1;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .img {
+        flex: 1;
+        background-color: aquamarine;
+        height: 100vh;
+        background-image: url(../icon/WhatsApp\ Image\ 2024-09-29\ at\ 4.31.14\ PM.jpeg);
+        border-radius: 100px;
+        transform: rotate(-30deg) translate(-300px, -300px) scale(1.5);
+      }
+      /* main code content and img*/
+      .info .content {
+        padding: 30px;
+        width: 80%;
+      }
+      .content h1 {
+        margin-bottom: 30px;
+        font-size: 30px;
+      }
+
+      .inputs {
+        width: 100%;
+        margin-bottom: 30px !important;
+      }
+      .inputs input {
+        border: none;
+        outline: none;
+        padding: 10px 0 10px 10px;
+        font-size: 20px;
+        background-color: transparent;
+      }
+      .inputs .inp {
+        margin-top: -10px;
+        border-bottom: 1px solid black !important;
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .inputs label {
+        font-weight: 400;
+        font-size: 20px;
+      }
+      .btn-submit {
+        width: 100%;
+        padding: 12px 0;
+        background-color: green;
+        color: white;
+        border: none;
+        margin-top: 30px;
+        border-radius: 6px;
+        font-size: 20px;
+        transition: 0.2s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+      }
+      .btn-submit:hover {
+        background-color: rgb(3, 162, 3);
+      }
+      @media (max-width: 767px) {
+        .img {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body dir="rtl">
+    <div class="container">
+      <div class="info">
+        <div class="content">
+          <h1>هل نسيت كلمة المرور!</h1>
+          <form action="">
+            <div class="inputs">
+              <label for="id">أدخل رقم الجوال</label>
+              <div class="inp" style="padding-left: 0px !important">
+                <input type="text" id="id" />
+              </div>
+            </div>
+
+            <a href="forgetPass2.html" class="btn-submit" >التالي</a>
+          </form>
+        </div>
+      </div>
+      <div class="img"></div>
+    </div>
+  </body>
+</html>

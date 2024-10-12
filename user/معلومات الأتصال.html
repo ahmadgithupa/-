@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تقديم الطلب | معلومات الأتصال</title>
+    <link rel="stylesheet" href="src/componants.css" />
+    <style>
+      .data {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin-bottom: 30px;
+        flex-wrap: wrap;
+      }
+      .data > div {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        flex-wrap: wrap;
+      }
+      .data > div input,
+      .data > div select {
+        padding: 20px 30px;
+        border-radius: 6px;
+        border: 1px solid rgb(208, 208, 208);
+        font-size: 18px;
+      }
+      .data > div label {
+        font-size: 26px;
+      }
+      .submit {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      .submit button,
+      .submit a {
+        width: 300px;
+        padding: 20px;
+        border-radius: 12px;
+        border: none;
+        background-color: #2b6741;
+        color: white;
+        font-size: 20px;
+        transition: 0.3s;
+      }
+      .submit a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        text-decoration: none;
+      }
+      .submit button:hover,
+      .submit a:hover {
+        background-color: #247a43;
+      }
+
+    </style>
+  </head>
+  <body dir="rtl">
+    <div class="container">
+      
+      <aside>
+        <div class="logo">
+          <img src="../icon/logo.png" alt="" style="width: 70px" />بلدية المغازي
+        </div>
+        <a href="index.html" class="btn"
+          ><img class="icon" src="../icon/home 1.png" alt="" />الرئيسية</a
+        >
+        <a href="طلباتي.html" class="btn"
+          ><img class="icon" src="../icon/doc 1.png" alt="" />متابعه الطلب</a
+        >
+      </aside>
+      <main>
+        <!-- start main Title -->
+        <div class="box main-title flex flex-between flex-align">
+          <h1 style="font-size: 26px">الرئيسية</h1>
+          <span style="color: rgb(46, 46, 46); cursor: pointer"
+            >حسام العصار<img src="../icon/Vector.png" alt=""
+          /></span>
+          <div class="setting">
+            <select name="" id="">
+              <option value="" hidden>اللغة</option>
+              <option value="العربية">العربية</option>
+              <option value="English">English</option>
+            </select>
+            <div class="set">
+              <img src="../icon/fi-rr-power.png" alt="" /> تسجيل الخروج
+            </div>
+          </div>
+        </div>
+        <!-- End main Title -->
+        <div class="box steps">
+          <div>
+            <a href="البيانات الشخصية.html" class="active">1</a>البيانات الشخصية
+          </div>
+          <div>
+            <a href="معلومات الأتصال.html" class="active">2</a>معلومات الأتصال
+          </div>
+          <div><a href="التكوين الأسري.html">3</a>التكوين الأسري</div>
+          <div><a href="بيانات السكن.html">4</a>بيانات السكن</div>
+        </div>
+        <!-- content -->
+        <form id="registrationForm" action="التكوين الأسري.html" method="POST">
+          <div class="data-1 data">
+            <div>
+              <label for="phon">رقم الهاتف</label>
+              <input id="phon" type="text" />
+            </div>
+            <div>
+              <label for="home">محافظة السكن</label>
+              <select name="" id="home">
+                <option value="value1" hidden></option>
+                <option value="شمال">المحافظة الشمالية</option>
+                <option value="وسط">المحافظة الوسطى</option>
+                <option value="جنوب">المحافظة الجنوبية</option>
+              </select>
+            </div>
+          </div>
+          <div class="data-2 data">
+            <div>
+              <label for="home2">التجمع السكاني</label>
+              <span>عنوان المنطقة المتواجد فيها حاليا</span>
+              <input id="home2" type="text" />
+            </div>
+          </div>
+
+          <div class="data submit" style="margin-top: 60px">
+            <a href="البيانات الشخصية.html">السابق</a>
+            <button class="sub" type="submit">التالي</button>
+          </div>
+        </form>
+      </main>
+    </div>
+    <script>
+      document
+        .getElementById("registrationForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault(); // يمنع الإرسال الافتراضي للنموذج
+
+          // هنا يمكنك إضافة أي تحقق إضافي أو منطق آخر
+          let phon = document.getElementById("phon").value;
+          let home = document.getElementById("home").value;
+          let home2 = document.getElementById("home2").value;
+
+          if (phon && home && home2) {
+            // إذا كانت البيانات صحيحة، يمكن إرسال النموذج يدوياً
+            window.location.href = "التكوين الأسري.html"; // الانتقال للصفحة التالية
+          } else {
+            alert("يرجى إدخال جميع البيانات المطلوبة!");
+          }
+        });
+    </script>
+  </body>
+</html>

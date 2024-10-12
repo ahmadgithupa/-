@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تقديم الطلب |بيانات السكن</title>
+    <link rel="stylesheet" href="src/componants.css" />
+    <style>
+      .data {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin-bottom: 30px;
+        flex-wrap: wrap;
+      }
+      .data > div {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        flex-wrap: wrap;
+      }
+      .data > div input,
+      .data > div select {
+        padding: 20px 30px;
+        border-radius: 6px;
+        border: 1px solid rgb(208, 208, 208);
+        font-size: 18px;
+      }
+      .data > div label {
+        font-size: 26px;
+      }
+      .submit {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      .submit button,
+      .submit a {
+        width: 300px;
+        padding: 20px;
+        border-radius: 12px;
+        border: none;
+        background-color: #2b6741;
+        color: white;
+        font-size: 20px;
+        transition: 0.3s;
+      }
+      .submit a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        text-decoration: none;
+      }
+      .submit button:hover,
+      .submit a:hover {
+        background-color: #247a43;
+      }
+      .imgfile {
+        width: 70%;
+        border: 2px dashed rgb(101, 101, 101);
+        border-radius: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 70px auto;
+        flex-direction: column;
+        padding: 30px 10px;
+      }
+      /* input file */
+
+      /* تنسيق عام للمحتوى */
+      .upload-container {
+        text-align: center;
+        font-family: "Arial", sans-serif;
+        padding: 20px;
+        border-radius: 10px;
+        display: inline-block;
+      }
+
+      /* تنسيق الفقرة */
+      .upload-container p {
+        color: #333;
+        font-size: 14px;
+        margin-bottom: 10px;
+      }
+
+      /* تصميم الزر المخصص لتحميل الصورة */
+      .custom-file-button {
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        text-align: center;
+        display: inline-block;
+        text-decoration: none;
+        border: 1px solid #97b7a0;
+        background-color: #247a43;
+      }
+
+      .custom-file-button:hover {
+        background-color: #789083;
+        border-color: #789083;
+      }
+    </style>
+  </head>
+  <body dir="rtl">
+    <div class="container">
+      <aside>
+        <div class="logo">
+          <img src="../icon/logo.png" alt="" style="width: 70px" />بلدية المغازي
+        </div>
+        <a href="index.html" class="btn"
+          ><img class="icon" src="../icon/home 1.png" alt="" />الرئيسية</a
+        >
+        <a href="طلباتي.html" class="btn"
+          ><img class="icon" src="../icon/doc 1.png" alt="" />متابعه الطلب</a
+        >
+      </aside>
+      <main>
+        <!-- start main Title -->
+        <div class="box main-title flex flex-between flex-align">
+          <h1 style="font-size: 26px">الرئيسية</h1>
+          <span style="color: rgb(46, 46, 46); cursor: pointer"
+            >حسام العصار<img src="../icon/Vector.png" alt=""
+          /></span>
+          <div class="setting">
+            <select name="" id="">
+              <option value="" hidden>اللغة</option>
+              <option value="العربية">العربية</option>
+              <option value="English">English</option>
+            </select>
+            <div class="set">
+              <img src="../icon/fi-rr-power.png" alt="" /> تسجيل الخروج
+            </div>
+          </div>
+        </div>
+        <!-- End main Title -->
+        <div class="box steps">
+          <div>
+            <a href="البيانات الشخصية.html" class="active">1</a>البيانات الشخصية
+          </div>
+          <div>
+            <a href="معلومات الأتصال.html" class="active">2</a>معلومات الأتصال
+          </div>
+          <div>
+            <a href="التكوين الأسري.html" class="active">3</a>التكوين الأسري
+          </div>
+          <div>
+            <a href="بيانات السكن.html" class="active">4</a>بيانات السكن
+          </div>
+        </div>
+        <form action="">
+          <div class="data-1 data">
+            <div>
+              <label for="name">حيازة السكن</label>
+              <input id="name" type="text" />
+            </div>
+            <div>
+              <label for="status">نوع السكن</label>
+              <select name="" id="status">
+                <option value="value1" hidden></option>
+                <option value="value1">شقة</option>
+                <option value="value1">محل تجاري</option>
+                <option value="value1">منزل</option>
+              </select>
+            </div>
+          </div>
+          <div class="data2 data">
+            <div>
+              <label for="status">نوع الضرر</label>
+              <select name="" id="status">
+                <option value="value1" hidden></option>
+                <option value="value1">كلي</option>
+                <option value="value1">جزئي غير صالح للسكن</option>
+                <option value="value1">جزئي</option>
+              </select>
+            </div>
+            <div>
+              <label for="num">عنوان السكن</label>
+              <input id="data" type="text" />
+            </div>
+          </div>
+          <div class="data imgfile">
+            <div class="upload-container">
+              <p>ارفق الصورة هنا أو اضغط على الزر أدناه</p>
+              <!-- input file مخفي -->
+              <input type="file" id="fileInput" style="display: none" />
+
+              <!-- label للزر المخصص -->
+              <label for="fileInput" class="custom-file-button"
+                >تحميل الصورة</label
+              >
+            </div>
+          </div>
+          <div class="data2 data">
+           <div>
+            <label for="masseg">اضافة ملاحظات</label>
+            <textarea
+              name=""
+              id="masseg"
+              style="
+                background-color: white;
+                border-radius: 12px;
+                height: 120px;
+                width: 100%;
+                font-size: 19px;
+                padding: 30px;
+              "
+            ></textarea>
+           </div>
+          </div>
+          <div class="data submit" style="margin-top: 60px">
+            <a href="التكوين الأسري.html">السابق</a>
+            <button type="submit">ارسال</button>
+          </div>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,173 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: aliceblue;
+}
+:root {
+  --mainColor: #2b6752;
+  --background: #eff8ef;
+}
+.box {
+  width: 100%;
+  padding: 30px 40px;
+  margin-bottom: 50px;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.058);
+  position: relative;
+}
+.container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+/* ============ flex =========== */
+.flex {
+  display: flex;
+}
+.gap10 {
+  gap: 10px;
+}
+.flex-between {
+  justify-content: space-between;
+}
+.flex-center {
+  justify-content: center;
+}
+.flex-align {
+  align-items: center;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+/* ============ main componantes =========== */
+
+aside {
+  width: 300px;
+  background-color: var(--background);
+  padding: 50px 20px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.084);
+  z-index: 500;
+}
+aside .logo {
+  margin-bottom: 30px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  color: black;
+  font-size: 26px;
+}
+aside a.btn {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  padding: 15px 30px;
+  margin-bottom: 30px;
+  background: #2b6741;
+  color: white;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bolder;
+}
+main {
+  width: calc(100% - 300px);
+  padding: 50px 10px;
+}
+/* العنوان الفرعي في عناصر البوكس */
+main .box .alt-title{
+  font-size: 22px; margin-bottom: 16px;
+}
+/* responsive  */
+@media (max-width: 991px) {
+  aside {
+    position: absolute;
+    top: 0;
+    right: -280px;
+    min-height: 100vh;
+    transition: 0.3s;
+  }
+  aside:hover {
+    right: 0;
+  }
+  main {
+    width: 100%;
+  }
+}
+
+/*  */
+
+
+.setting {
+  position: absolute;
+  padding: 30px;
+  background-color: #eee;
+  border-radius: 6px;
+  top: 70px;
+  left: 20px;
+  z-index: 100;
+}
+.setting select {
+  width: 100%;
+  background-color: transparent;
+  padding: 5px 0;
+  border: none;
+  margin-bottom: 12px;
+}
+.setting .set {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+.setting .set img {
+  width: 16px;
+}
+/* ============================ main stypse in page user data */
+main .steps {
+  background-color: transparent !important;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+main .steps div {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  font-size: 26px;
+}
+main .steps div a {
+  background-color: rgb(231, 231, 231);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  border-radius: 50%;
+  text-decoration: none;
+}
+@media (max-width: 991px) {
+  main .steps div{
+    font-size: 20px;
+    gap: 10px;
+  }
+  main .steps div a {
+    width: 26px;
+    height: 26px;
+    font-size: 16px;
+  }
+}
+main .steps a.active {
+  background-color: #2b6752 !important;
+  color: white !important;
+}

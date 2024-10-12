@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="src/componants.css" />
+    <style>
+      main .box .nots {
+        padding: 10px;
+        background-color: rgb(201, 255, 201);
+        color: black;
+        border-radius: 6px;
+      }
+      main .box .selection p {
+        font-size: 22px;
+        margin-bottom: 16px;
+      }
+      main .selection > div {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+      main .selection .num {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #4bd27d;
+        color: white;
+      }
+      main .order a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 120px;
+        padding: 13px 25px;
+        background: #2b6741;
+        color: white;
+        border-radius: 12px;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bolder;
+      }
+    </style>
+  </head>
+  <body dir="rtl">
+    <div class="container">
+      <!-- asid  -->
+      <aside>
+        <div class="logo">
+          <img src="../icon/logo.png" alt="" style="width: 70px" />بلدية المغازي
+        </div>
+        <a href="index.html" class="btn"
+          ><img class="icon" src="../icon/home 1.png" alt="" />الرئيسية</a
+        >
+        <a href="طلباتي.html" class="btn"
+          ><img class="icon" src="../icon/doc 1.png" alt="" />متابعه الطلب</a
+        >
+      </aside>
+      <main>
+        <!-- start main Title -->
+        <div class="box main-title flex flex-between flex-align">
+          <h1 style="font-size: 26px">الرئيسية</h1>
+          <span style="color: rgb(46, 46, 46); cursor: pointer"
+            >حسام العصار<img src="../icon/Vector.png" alt=""
+          /></span>
+          <div class="setting">
+            <select name="" id="">
+              <option value="" hidden>اللغة</option>
+              <option value="العربية">العربية</option>
+              <option value="English">English</option>
+            </select>
+            <div class="set">
+              <img src="../icon/fi-rr-power.png" alt="" /> تسجيل الخروج
+            </div>
+          </div>
+        </div>
+        <!-- End main Title -->
+        <div class="box">
+          <p class="alt-title">عن الموقع</p>
+          <div class="nots">
+            اضراري موقع لتسجيل المواطنين الذين تضررت بيوتهم خلال العدوان على
+            القطاع
+          </div>
+        </div>
+        <div class="box selection">
+          <p>المحددات</p>
+          <div>
+            <div class="num">1</div>
+            التسجيل لكل مواطن نازح تابع لبلدية المغازي
+          </div>
+          <div>
+            <div class="num">2</div>
+            التسجيل خاص بالمتضررين من حرب 2023
+          </div>
+          <div>
+            <div class="num">3</div>
+            التسجيل للمتضررين سواء بشكل كلي او جزئي
+          </div>
+        </div>
+        <div class="box flex flex-between flex-align order">
+          <p style="font-size: 22px">أضافة طلب</p>
+          <a href="البيانات الشخصية.html">أضافة</a>
+        </div>
+        <div
+          class="box"
+          style="
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 50px;
+          "
+        >
+          <h2>تواصل معنا</h2>
+          <div style="display: flex; align-items: center; gap: 15px">
+            <img src="../icon/whatsapp_733585 1.png" alt="" />+972 59*********
+          </div>
+          <div style="display: flex; align-items: center; gap: 15px">
+            <img src="../icon/call_9330504 1.png" alt="" />059*********
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!-- java Script -->
+    <script></script>
+  </body>
+</html>

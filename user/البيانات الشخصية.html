@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تقديم الطلب | البيانات الشخصية</title>
+    <link rel="stylesheet" href="src/componants.css" />
+    <style>
+      .data {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin-bottom: 30px;
+        flex-wrap: wrap;
+      }
+      .data > div {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        flex-wrap: wrap;
+      }
+      .data > div input,
+      .data > div select {
+        padding: 20px 30px;
+        border-radius: 6px;
+        border: 1px solid rgb(208, 208, 208);
+        font-size: 18px;
+      }
+      .data > div label {
+        font-size: 26px;
+      }
+      .submit a {
+        width: 100%;
+        padding: 20px;
+        border-radius: 6px;
+        border: none;
+        background-color: #2b6741;
+        color: white;
+        font-size: 20px;
+        transition: 0.3s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+      }
+      .submit a:hover {
+        background-color: #247a43;
+      }
+    </style>
+  </head>
+  <body dir="rtl">
+    <div class="container">
+      <aside>
+        <div class="logo">
+          <img src="../icon/logo.png" alt="" style="width: 70px" />بلدية المغازي
+        </div>
+        <a href="index.html" class="btn"
+          ><img class="icon" src="../icon/home 1.png" alt="" />الرئيسية</a
+        >
+        <a href="طلباتي.html" class="btn"
+          ><img class="icon" src="../icon/doc 1.png" alt="" />متابعه الطلب</a
+        >
+      </aside>
+      <main>
+        <!-- start main Title -->
+        <div class="box main-title flex flex-between flex-align">
+          <h1 style="font-size: 26px">الرئيسية</h1>
+          <span style="color: rgb(46, 46, 46); cursor: pointer"
+            >حسام العصار<img src="../icon/Vector.png" alt=""
+          /></span>
+          <div class="setting">
+            <select name="" id="">
+              <option value="" hidden>اللغة</option>
+              <option value="العربية">العربية</option>
+              <option value="English">English</option>
+            </select>
+            <div class="set">
+              <img src="../icon/fi-rr-power.png" alt="" /> تسجيل الخروج
+            </div>
+          </div>
+        </div>
+        <!-- End main Title -->
+        <div class="box steps">
+          <div>
+            <a href="البيانات الشخصية.html" class="active">1</a>البيانات الشخصية
+          </div>
+          <div><a href="معلومات الأتصال.html">2</a>معلومات الأتصال</div>
+          <div><a href="التكوين الأسري.html">3</a>التكوين الأسري</div>
+          <div><a href="بيانات السكن.html">4</a>بيانات السكن</div>
+        </div>
+        <!-- form -->
+        <form id="" action="">
+          <div class="data-1 data">
+            <div>
+              <label for="name">الأسم رباعي</label>
+              <input id="name" type="text" />
+            </div>
+            <div>
+              <label for="num">رقم الهوية</label>
+              <input id="num" type="text" />
+            </div>
+          </div>
+          <div class="data-2 data">
+            <div>
+              <label for="typeNum">نوع الهوية</label>
+              <select name="" id="typeNum">
+                <option value="value1" hidden>نوع الهوية</option>
+                <option value="value1">هوية فلسطينية</option>
+                <option value="value1">وثيقة فلسطينية</option>
+                <option value="value1">بطاقه تعريفية</option>
+              </select>
+            </div>
+            <div>
+              <label for="gender">الجنس</label>
+              <select name="" id="gender">
+                <option value="value1" hidden></option>
+                <option value="value1">ذكر</option>
+                <option value="value1">أنثى</option>
+              </select>
+            </div>
+          </div>
+          <div class="data3 data">
+            <div>
+              <label for="date">تاريخ الميلاد</label>
+              <input id="data" type="date" />
+            </div>
+            <div>
+              <label for="status">الحالة الأجتماعية</label>
+              <select name="" id="status">
+                <option value="value1" hidden></option>
+                <option value="value1">متزوج</option>
+                <option value="value1">أعزب</option>
+              </select>
+            </div>
+          </div>
+          <div class="data-4 data">
+            <div>
+              <label for="nameH">أسم الزوجة رباعي</label>
+              <input id="nameH" type="text" />
+            </div>
+            <div>
+              <label for="numH">رقم هوية الزوجة</label>
+              <input id="numH" type="text" />
+            </div>
+          </div>
+          <div class="data-5 data">
+            <div>
+              <label for="typenumH">نوع هوية الزوجة</label>
+              <select name="" id="typenumH">
+                <option value="value1" hidden></option>
+                <option value="value1">هوية فلسطينية</option>
+                <option value="value1">وثيقة فلسطينية</option>
+                <option value="value1">بطاقه تعريفية</option>
+              </select>
+            </div>
+          </div>
+          <div class="data submit" style="margin-top: 60px">
+            <a href="معلومات الأتصال.html" class="sub">التالي</a>
+          </div>
+        </form>
+      </main>
+    </div>
+
+  </body>
+</html>

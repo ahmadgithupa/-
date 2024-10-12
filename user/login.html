@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login user</title>
+    <link rel="stylesheet" href="src/componants.css" />
+    <style>
+      .container {
+        overflow: hidden;
+      }
+      .info {
+        flex: 1;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .img {
+        flex: 1;
+        background-color: aquamarine;
+        height: 100vh;
+        background-image: url(../icon/WhatsApp\ Image\ 2024-09-29\ at\ 4.31.14\ PM.jpeg);
+        border-radius: 100px;
+        transform: rotate(-30deg) translate(-300px, -300px) scale(1.5);
+      }
+      /* main code content and img*/
+      .info .content {
+        padding: 30px;
+      }
+      .content h1 {
+        margin-bottom: 40px;
+        font-size: 50px;
+      }
+      .content h1 span {
+        margin-bottom: 20px;
+        color: rgb(74, 74, 74);
+        font-size: 30px;
+        font-weight: 400;
+      }
+      .inputs {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 300px;
+        margin-bottom: 30px !important;
+      }
+      .inputs input {
+        border: none;
+        outline: none;
+        padding: 10px 0 10px 10px;
+        font-size: 20px;
+        background-color: transparent;
+      }
+      .inputs .inp {
+        margin-top: -10px;
+        border-bottom: 1px solid black !important;
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .inputs label {
+        font-weight: bold;
+        font-size: 20px;
+      }
+      .btn-submit {
+        width: 100%;
+        padding: 12px 0;
+        background-color: green;
+        color: white;
+        border: none;
+        margin-top: 30px;
+        border-radius: 6px;
+        font-size: 20px;
+        transition: 0.2s;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        text-decoration: none;
+      }
+      .btn-submit:hover {
+        background-color: rgb(3, 162, 3);
+      }
+      @media (max-width: 767px) {
+        .img {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body dir="rtl">
+    <div class="container">
+      <div class="info">
+        <div class="content">
+          <h1>أضراري<br /><span>تسجيل الدخول</span></h1>
+          <form action="">
+            <div class="inputs">
+              <label for="id">أدخل رقم الهوية</label>
+              <div class="inp" style="padding-left: 10px !important">
+                <input type="text" id="id" />
+                <img src="../icon/usericon.png" alt="" />
+              </div>
+            </div>
+            <div class="inputs">
+              <label for="pass">أدخل رقم الهوية</label>
+              <div class="inp" style="gap: 0 !important">
+                <input
+                  type="password"
+                  id="pass"
+                  style="width: 100% !important"
+                />
+              </div>
+            </div>
+            <div
+              class="remeber"
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+              "
+            >
+              <div style="display: flex; gap: 10px; align-items: center">
+                <input type="checkbox" id="rem" /><label for="rem"
+                  >تذكرني</label
+                >
+              </div>
+              <a href="forgetPass.html" style="text-decoration: none">نسيت كلمة المرور؟</a>
+            </div>
+            <a href="index.html" class="btn-submit" >تسجيل الدخول</a>
+            <h6 style="margin-top: 30px; font-size: 16px; text-align: center">
+              ليس لدي حساب؟ <a href="signup.html">تسجيل حساب جديد</a>
+            </h6>
+          </form>
+        </div>
+      </div>
+      <div class="img"></div>
+    </div>
+  </body>
+</html>
